@@ -7,10 +7,10 @@ View live link here:
 ====================
 
 <!-- ts -->
-* [Introduction] (##Introduction)
-* [Technologies] (##Technologies)
-* [Functionalities] (##Functionalities)
-* [Screenshots] (##Screenshots)
+* [Introduction](##Introduction)
+* [Technologies](##Technologies)
+* [Functionalities](##Functionalities)
+* [Screenshots](##Screenshots)
 
 <!-- te -->
 
