@@ -3,17 +3,6 @@ Project Owner: Aaron Au Yoong
 <br>
 View live link here:
 
-# Table of contents
-====================
-
-<!-- ts -->
-* [Introduction](##Introduction)
-* [Technologies](##Technologies)
-* [Functionalities](##Functionalities)
-* [Screenshots](##Screenshots)
-
-<!-- te -->
-
 ## Introduction
 As employees with busy schedules, there comes a need to keep track of important daily events for effective time management. This work day scheduler application allows users to achieve effective time management, through features such as current datetime display, viewing office hour timeblocks, adding events and more.  
 
