@@ -22,7 +22,7 @@ Below are the functionalities of the app:
 
 Application is made to resemble the homework mock-up, as shown below. 
 </br>
-<img src="./assets/images/05-third-part-apis-homework-demo.gif" width="80%">
+(./assets/images/05-third-part-apis-homework-demo.gif" width="80%)
 
 
 ## Screenshots 
