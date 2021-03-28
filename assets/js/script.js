@@ -1,13 +1,24 @@
 // Define main variables
 let timeNow = moment();
 let hourNow = moment().hour();
+let hourJSON = JSON.stringify(hourNow);
 let eventSaveBtn = $(".saveBtn");
 
+console.log(hourJSON);
 
-let comparingHour =  $(".hour").text();
+// Hourly variables
+let time1 = $("#nine").text();
+let time2 = $("#ten").text();
+let time3 = $("#eleven").text();
+let time4 = $("#twelve").text();
+let time5 = $("#thirteen").text();
+let time6 = $("#fourteen").text();
+let time7 = $("#fifteen").text();
+let time8 = $("#sixteen").text();
+let time9 = $("#seventeen").text();
 
-console.log(comparingHour)
-
+console.log(time1);
+console.log(time3);
 
 // Display current time by using moment.js, and updating time every second using jQuery
 let updateTime = function () {
@@ -24,18 +35,49 @@ $(document).ready(function() {
 // Function for time block colour - colour coded to represent past, present or future
 function setTimeblockColor() {
 
-    let compareHour = $(".hour").text();
+    hourJSON == time1 ? $("textarea").addClass("present")
+    : hourJSON > time1 ? $("textarea").addClass("future")
+    : $("textarea").addClass("past");
 
-    if (hourNow === compareHour) {
-        $("textarea").addClass("present");
-    } else if (hourNow > compareHour) {
-        $("textarea").addClass("future");
-    } else {
-        $("textarea").addClass("past");
-    // } else {
-    //     // for when it hits midnight and early morning before work hours
+    hourJSON == time2 ? $("textarea").addClass("present")
+    : hourJSON > time2 ? $("textarea").addClass("future")
+    : $("textarea").addClass("past");
+
+    hourJSON == time3 ? $("textarea").addClass("present")
+    : hourJSON > time3 ? $("textarea").addClass("future")
+    : $("textarea").addClass("past");
+
+    hourJSON == time4 ? $("textarea").addClass("present")
+    : hourJSON > time4 ? $("textarea").addClass("future")
+    : $("textarea").addClass("past");
+
+    hourJSON == time5 ? $("textarea").addClass("present")
+    : hourJSON > time5 ? $("textarea").addClass("future")
+    : $("textarea").addClass("past");
+
+    hourJSON == time6 ? $("textarea").addClass("present")
+    : hourJSON > time6 ? $("textarea").addClass("future")
+    : $("textarea").addClass("past");
+
+    hourJSON == time7 ? $("textarea").addClass("present")
+    : hourJSON > time7 ? $("textarea").addClass("future")
+    : $("textarea").addClass("past");
+
+    hourJSON == time8 ? $("textarea").addClass("present")
+    : hourJSON > time8 ? $("textarea").addClass("future")
+    : $("textarea").addClass("past");
+
+    hourJSON == time9 ? $("textarea").addClass("present")
+    : hourJSON > time9 ? $("textarea").addClass("future")
+    : $("textarea").addClass("past");
+
+    // if (hourNow === time1) {
+    //     $("textarea").addClass("present");
+    // } else if (hourNow > time1) {
     //     $("textarea").addClass("future");
-    }
+    // } else {
+    //     $("textarea").addClass("past");
+    // }
 };
 
 // Save button will allow user's plans to be saved to localStorage
