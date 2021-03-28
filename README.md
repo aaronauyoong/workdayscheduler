@@ -20,7 +20,11 @@ Below are the functionalities of the app:
 4. When clicking into a timeblock, users can enter an event and save it to localStorage.
 5. Saved event persists after user refresh/reload of page. 
 
-## Functionalities
+Application is made to resemble the homework mock-up, as shown below. 
+</br>
+<img src="./assets/images/05-third-part-apis-homework-demo.gif" width="80%")
+
 
 ## Screenshots 
+
 

@@ -7,18 +7,18 @@ let eventSaveBtn = $(".saveBtn");
 console.log(hourJSON);
 
 // Hourly variables
-let time1 = $("#nine").text();
-let time2 = $("#ten").text();
-let time3 = $("#eleven").text();
-let time4 = $("#twelve").text();
-let time5 = $("#thirteen").text();
-let time6 = $("#fourteen").text();
-let time7 = $("#fifteen").text();
-let time8 = $("#sixteen").text();
-let time9 = $("#seventeen").text();
+let time9 = $("#9").text();
+let time10 = $("#10").text();
+let time11 = $("#11").text();
+let time12 = $("#12").text();
+let time13 = $("#13").text();
+let time14 = $("#14").text();
+let time15 = $("#15").text();
+let time16 = $("#16").text();
+let time17 = $("#17").text();
 
-console.log(time1);
-console.log(time3);
+console.log(time9);
+console.log(time11);
 
 // Display current time by using moment.js, and updating time every second using jQuery
 let updateTime = function () {
@@ -32,52 +32,46 @@ $(document).ready(function() {
     setInterval (updateTime, 1_000);
 });
 
+
 // Function for time block colour - colour coded to represent past, present or future
 function setTimeblockColor() {
 
-    hourJSON == time1 ? $("textarea").addClass("present")
-    : hourJSON > time1 ? $("textarea").addClass("future")
+    hourJSON === time9 ? $("#9am").addClass("present")
+    : hourJSON > time9 ? $("#9am").addClass("future")
+    : $("#9am").addClass("past");
+
+    hourJSON === time10 ? $(".hour").addClass("present")
+    : hourJSON > time10 ? $(".hour").addClass("future")
+    : $(".hour").addClass("past");
+
+    hourJSON === time11 ? $("textarea").addClass("present")
+    : hourJSON > time11 ? $("textarea").addClass("future")
     : $("textarea").addClass("past");
 
-    hourJSON == time2 ? $("textarea").addClass("present")
-    : hourJSON > time2 ? $("textarea").addClass("future")
+    hourJSON === time12 ? $("textarea").addClass("present")
+    : hourJSON > time12 ? $("textarea").addClass("future")
     : $("textarea").addClass("past");
 
-    hourJSON == time3 ? $("textarea").addClass("present")
-    : hourJSON > time3 ? $("textarea").addClass("future")
+    hourJSON === time13 ? $("textarea").addClass("present")
+    : hourJSON > time13 ? $("textarea").addClass("future")
     : $("textarea").addClass("past");
 
-    hourJSON == time4 ? $("textarea").addClass("present")
-    : hourJSON > time4 ? $("textarea").addClass("future")
+    hourJSON === time14 ? $("textarea").addClass("present")
+    : hourJSON > time14 ? $("textarea").addClass("future")
     : $("textarea").addClass("past");
 
-    hourJSON == time5 ? $("textarea").addClass("present")
-    : hourJSON > time5 ? $("textarea").addClass("future")
+    hourJSON === time15 ? $("textarea").addClass("present")
+    : hourJSON > time15 ? $("textarea").addClass("future")
     : $("textarea").addClass("past");
 
-    hourJSON == time6 ? $("textarea").addClass("present")
-    : hourJSON > time6 ? $("textarea").addClass("future")
+    hourJSON === time16 ? $("textarea").addClass("present")
+    : hourJSON > time16 ? $("textarea").addClass("future")
     : $("textarea").addClass("past");
 
-    hourJSON == time7 ? $("textarea").addClass("present")
-    : hourJSON > time7 ? $("textarea").addClass("future")
+    hourJSON === time17 ? $("textarea").addClass("present")
+    : hourJSON > time17 ? $("textarea").addClass("future")
     : $("textarea").addClass("past");
 
-    hourJSON == time8 ? $("textarea").addClass("present")
-    : hourJSON > time8 ? $("textarea").addClass("future")
-    : $("textarea").addClass("past");
-
-    hourJSON == time9 ? $("textarea").addClass("present")
-    : hourJSON > time9 ? $("textarea").addClass("future")
-    : $("textarea").addClass("past");
-
-    // if (hourNow === time1) {
-    //     $("textarea").addClass("present");
-    // } else if (hourNow > time1) {
-    //     $("textarea").addClass("future");
-    // } else {
-    //     $("textarea").addClass("past");
-    // }
 };
 
 // Save button will allow user's plans to be saved to localStorage
@@ -103,15 +97,15 @@ function activateWorkPlanner() {
 // Replace text in divs with hour class to AM/PM 
 
 function replaceHours() {
-    $("#nine").replaceWith('<div class="hour col-2"> 9AM </div>');
-    $("#ten").replaceWith('<div class="hour col-2"> 10AM </div>');
-    $("#eleven").replaceWith('<div class="hour col-2"> 11AM </div>');
-    $("#twelve").replaceWith('<div class="hour col-2"> 12PM </div>');
-    $("#thirteen").replaceWith('<div class="hour col-2"> 1PM </div>');
-    $("#fourteen").replaceWith('<div class="hour col-2"> 2PM </div>');
-    $("#fifteen").replaceWith('<div class="hour col-2"> 3PM </div>');
-    $("#sixteen").replaceWith('<div class="hour col-2"> 4PM </div>');
-    $("#seventeen").replaceWith('<div class="hour col-2"> 5PM </div>');
+    $("#9").replaceWith('<div class="hour col-2"> 9AM </div>');
+    $("#10").replaceWith('<div class="hour col-2"> 10AM </div>');
+    $("#11").replaceWith('<div class="hour col-2"> 11AM </div>');
+    $("#12").replaceWith('<div class="hour col-2"> 12PM </div>');
+    $("#13").replaceWith('<div class="hour col-2"> 1PM </div>');
+    $("#14").replaceWith('<div class="hour col-2"> 2PM </div>');
+    $("#15").replaceWith('<div class="hour col-2"> 3PM </div>');
+    $("#16").replaceWith('<div class="hour col-2"> 4PM </div>');
+    $("#17").replaceWith('<div class="hour col-2"> 5PM </div>');
 };
 
 setTimeblockColor();
