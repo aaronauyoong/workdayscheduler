@@ -3,10 +3,16 @@ let timeNow = moment();
 let hourNow = moment().hour();
 let eventSaveBtn = $(".saveBtn");
 
+
+let comparingHour =  $(".hour").text();
+
+console.log(comparingHour)
+
+
 // Display current time by using moment.js, and updating time every second using jQuery
 let updateTime = function () {
     date = moment(new Date())
-    datetime.html(date.format("dddd, MMMM Do YYYY"));
+    datetime.html(date.format("dddd, MMMM Do YYYY hh:mm:ss a"));
 };
 
 $(document).ready(function() {
@@ -18,16 +24,17 @@ $(document).ready(function() {
 // Function for time block colour - colour coded to represent past, present or future
 function setTimeblockColor() {
 
-    let compareHour = $("#hour")
+    let compareHour = $(".hour").text();
+
     if (hourNow === compareHour) {
         $("textarea").addClass("present");
     } else if (hourNow > compareHour) {
         $("textarea").addClass("future");
-    } else if (hourNow > compareHour) {
-        $("textarea").addClass("past");
     } else {
-        // for when it hits midnight and early morning before work hours
-        $("textarea").addClass("future");
+        $("textarea").addClass("past");
+    // } else {
+    //     // for when it hits midnight and early morning before work hours
+    //     $("textarea").addClass("future");
     }
 };
 
@@ -51,18 +58,20 @@ function activateWorkPlanner() {
     });
 }
 
-setTimeblockColor();
-activateWorkPlanner();
-
 // Replace text in divs with hour class to AM/PM 
 
-for (let index = 9; index <= 17; index++) {
-    const hour12 = index > 12 ? index - 12 : index;
-    const meridiem = index < 12 ? "AM" : "PM";
-    const hourInput = hour12 + meridiem;
-
-    function replaceHours() {
-    }
-
-    $(".hour").replaceWith('<div class="hour col-2"> hour12 meridiem </div>');
+function replaceHours() {
+    $("#nine").replaceWith('<div class="hour col-2"> 9AM </div>');
+    $("#ten").replaceWith('<div class="hour col-2"> 10AM </div>');
+    $("#eleven").replaceWith('<div class="hour col-2"> 11AM </div>');
+    $("#twelve").replaceWith('<div class="hour col-2"> 12PM </div>');
+    $("#thirteen").replaceWith('<div class="hour col-2"> 1PM </div>');
+    $("#fourteen").replaceWith('<div class="hour col-2"> 2PM </div>');
+    $("#fifteen").replaceWith('<div class="hour col-2"> 3PM </div>');
+    $("#sixteen").replaceWith('<div class="hour col-2"> 4PM </div>');
+    $("#seventeen").replaceWith('<div class="hour col-2"> 5PM </div>');
 };
+
+setTimeblockColor();
+replaceHours();
+activateWorkPlanner();
