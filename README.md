@@ -22,9 +22,29 @@ Below are the functionalities of the app:
 
 Application is made to resemble the homework mock-up, as shown below. 
 </br>
-![Homework mockup](./assets/images/05-third-part-apis-homework-demo.gif)
+![Homework mockup](./assets/images/05-third-party-apis-homework-demo.gif)
 
+* Note that I extended the day scheduler to begin at 9am, and end at 7pm. 
 
 ## Screenshots 
+
+1. Screenshot of landing page,  displaying current time and past timeblocks (grey).
+<br>
+<img src="assets/images/dayschedulerscreenshot1.png" width="80%">
+<br>
+<br>
+
+2. Screenshot of current timeblock (red), and future timeblocks (green).
+<br>
+<img src="assets/images/dayschedulerscreenshot2.png" width="80%">
+<br>
+<br>
+
+3. Screenshot of console, showing that entered data is saved to localStorage.  Data remains after page refresh.
+<br>
+<img src="assets/images/dayschedulerscreenshot3.png" width="80%">
+<br>
+<br>
+
 
 
