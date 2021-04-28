@@ -1,7 +1,16 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Work Day Scheduler
 Project Owner: Aaron Au Yoong
 <br>
 View live link here: https://aaronauyoong.github.io/workdayscheduler/.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
+
+## Table of Contents
+* [Introduction](#Introduction)
+* [Technologies](#Technologies)
+* [Functionalities](#Functionalities)
+* [Screenshots](#Screenshots)
+* [License](#License)
 
 ## Introduction
 As employees with busy schedules, there comes a need to keep track of important daily events for effective time management. This work day scheduler application allows users to achieve effective time management, through features such as current datetime display, viewing office hour timeblocks, adding events and more.  
@@ -27,7 +36,6 @@ Application is made to resemble the homework mock-up, as shown below.
 * Note that I extended the day scheduler to begin at 9am, and end at 7pm. 
 
 ## Screenshots 
-
 1. Screenshot of landing page,  displaying current time and past timeblocks (grey).
 <br>
 <img src="assets/images/dayschedulerscreenshot1.png" width="80%">
@@ -46,5 +54,6 @@ Application is made to resemble the homework mock-up, as shown below.
 <br>
 <br>
 
-
+## License
+Copyright (c) 2021-Present Aaron Au Yoong. All rights reserved.
 
